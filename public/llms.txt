@@ -1,0 +1,34 @@
+# DevTools Hub
+
+> Free online developer tools that run entirely in your browser. Fast, private, no data sent to servers. Available in 7 languages.
+
+DevTools Hub provides browser-based developer utilities including JSON formatting, Base64 encoding, URL encoding, hash generation, UUID generation, timestamp conversion, password generation, QR code creation, JWT decoding, and regex testing. All tools execute client-side using JavaScript — no data ever leaves the user's device.
+
+## Tools
+
+- [JSON Formatter](https://devtools-hub.vercel.app/en/json-formatter): Format, validate, and minify JSON data with syntax highlighting and error detection
+- [Base64 Encoder/Decoder](https://devtools-hub.vercel.app/en/base64): Encode and decode Base64 strings with full UTF-8 support
+- [URL Encoder/Decoder](https://devtools-hub.vercel.app/en/url-encoder): Encode and decode URL components using encodeURIComponent or encodeURI
+- [Hash Generator](https://devtools-hub.vercel.app/en/hash-generator): Generate SHA-1, SHA-256, SHA-384, and SHA-512 hashes using the Web Crypto API
+- [UUID Generator](https://devtools-hub.vercel.app/en/uuid-generator): Generate cryptographically random UUID v4 identifiers in bulk
+- [Unix Timestamp Converter](https://devtools-hub.vercel.app/en/timestamp-converter): Convert between Unix timestamps and human-readable dates in multiple formats
+- [Password Generator](https://devtools-hub.vercel.app/en/password-generator): Generate secure random passwords with configurable length and character sets
+- [QR Code Generator](https://devtools-hub.vercel.app/en/qr-code): Create QR codes from text or URLs with custom colors, sizes, and error correction levels
+- [JWT Decoder](https://devtools-hub.vercel.app/en/jwt-decoder): Decode and inspect JSON Web Token headers, payloads, and expiration status
+- [Regex Tester](https://devtools-hub.vercel.app/en/regex-tester): Test regular expressions with live matching, highlighting, and common pattern presets
+- [Text Inspector](https://devtools-hub.vercel.app/en/text-inspector): Count characters, words, lines, and bytes; view Unicode code points and UTF-8/UTF-16 encoding details
+- [Password Hasher](https://devtools-hub.vercel.app/en/password-hasher): Hash passwords with Argon2id or PBKDF2-SHA256 with configurable salt, iterations, and memory cost via WebAssembly
+- [Test Data Generator](https://devtools-hub.vercel.app/en/test-data-generator): Generate random strings, emails, names, dates, IPs, phone numbers, Lorem Ipsum, and JSON for testing
+- [Diff Checker](https://devtools-hub.vercel.app/en/diff-checker): Compare two texts side by side with highlighted additions, deletions, and unchanged lines
+
+## Languages
+
+Available in English, Japanese (日本語), Korean (한국어), German (Deutsch), French (Français), Spanish (Español), and Portuguese (Português).
+
+## Technical Details
+
+- Built with Next.js, TypeScript, and Tailwind CSS
+- All processing happens client-side in the browser
+- No cookies, no tracking, no server-side data storage
+- Static site generation for fast loading
+- Works offline after initial load
