@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { locales, localeNames, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/getDictionary";
 import { DictionaryProvider } from "@/i18n/DictionaryProvider";
-import { OrganizationSchema } from "@/components/StructuredData";
+import { OrganizationSchema, WebSiteSchema } from "@/components/StructuredData";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 export async function generateStaticParams() {
@@ -81,6 +81,11 @@ export default async function LocaleLayout({
   return (
     <>
       <OrganizationSchema url={baseUrl} />
+      <WebSiteSchema
+        url={baseUrl}
+        name={dict.meta.siteTitle}
+        description={dict.meta.siteDescription}
+      />
       <header className="border-b border-card-border bg-card sticky top-0 z-50">
         <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
           <Link

@@ -59,6 +59,11 @@ export async function generateToolMetadata(
       type: "website" as const,
       siteName: "DevTools Hub",
     },
+    twitter: {
+      card: "summary" as const,
+      title: tool.metaTitle,
+      description: tool.metaDescription,
+    },
   };
 }
 

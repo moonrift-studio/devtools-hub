@@ -1,8 +1,8 @@
 # DevTools Hub
 
-> Free online developer tools that run entirely in your browser. Fast, private, no data sent to servers. Available in 7 languages.
+> Free online developer & web tools that run entirely in your browser. Fast, private, no data sent to servers. Available in 7 languages.
 
-DevTools Hub provides browser-based developer utilities including JSON formatting, Base64 encoding, URL encoding, hash generation, UUID generation, timestamp conversion, password generation, QR code creation, JWT decoding, and regex testing. All tools execute client-side using JavaScript — no data ever leaves the user's device.
+DevTools Hub provides 20 browser-based utilities for developers, writers, and content creators. All tools execute client-side using JavaScript — no data ever leaves the user's device.
 
 ## Tools
 
@@ -20,6 +20,12 @@ DevTools Hub provides browser-based developer utilities including JSON formattin
 - [Password Hasher](https://devtools-hub.vercel.app/en/password-hasher): Hash passwords with Argon2id or PBKDF2-SHA256 with configurable salt, iterations, and memory cost via WebAssembly
 - [Test Data Generator](https://devtools-hub.vercel.app/en/test-data-generator): Generate random strings, emails, names, dates, IPs, phone numbers, Lorem Ipsum, and JSON for testing
 - [Diff Checker](https://devtools-hub.vercel.app/en/diff-checker): Compare two texts side by side with highlighted additions, deletions, and unchanged lines
+- [Halfwidth/Fullwidth Converter](https://devtools-hub.vercel.app/en/halfwidth-fullwidth): Convert between halfwidth (hankaku) and fullwidth (zenkaku) characters including ASCII, numbers, and katakana
+- [HTML Tag Stripper](https://devtools-hub.vercel.app/en/html-strip): Remove HTML tags from text and extract clean plain text content with entity decoding
+- [Keyword Counter](https://devtools-hub.vercel.app/en/keyword-counter): Analyze keyword frequency, density, bigrams, and trigrams for SEO and content optimization
+- [PDF Line Break Remover](https://devtools-hub.vercel.app/en/pdf-line-break-remover): Remove unwanted line breaks from text copied from PDF documents while preserving paragraphs
+- [Markdown Preview](https://devtools-hub.vercel.app/en/markdown-preview): Write Markdown and see live rendered preview with HTML export, supporting tables, code blocks, and more
+- [Color Picker](https://devtools-hub.vercel.app/en/color-picker): Pick colors with HEX/RGB/HSL conversion, shade palette generation, color harmonies, and WCAG contrast checking
 
 ## Languages
 
@@ -27,8 +33,9 @@ Available in English, Japanese (日本語), Korean (한국어), German (Deutsch)
 
 ## Technical Details
 
-- Built with Next.js, TypeScript, and Tailwind CSS
+- Built with Next.js 16, TypeScript, and Tailwind CSS 4
 - All processing happens client-side in the browser
 - No cookies, no tracking, no server-side data storage
-- Static site generation for fast loading
+- Static site generation (SSG) for fast loading
 - Works offline after initial load
+- Security headers configured (X-Frame-Options, X-Content-Type-Options, Referrer-Policy)

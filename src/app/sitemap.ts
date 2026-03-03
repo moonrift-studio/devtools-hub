@@ -36,6 +36,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
         },
       });
     }
+
+    // Privacy page
+    entries.push({
+      url: `${baseUrl}/${locale}/privacy`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.3,
+      alternates: {
+        languages: Object.fromEntries(
+          locales.map((l) => [l, `${baseUrl}/${l}/privacy`])
+        ),
+      },
+    });
   }
 
   return entries;

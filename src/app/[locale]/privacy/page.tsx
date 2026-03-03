@@ -16,14 +16,28 @@ export async function generateMetadata({
   const baseUrl =
     process.env.NEXT_PUBLIC_BASE_URL || "https://devtools-hub.vercel.app";
 
+  const title = `${dict.privacy.title} — DevTools Hub`;
+
   return {
-    title: `${dict.privacy.title} — DevTools Hub`,
+    title,
     description: dict.privacy.metaDescription,
     alternates: {
       canonical: `${baseUrl}/${locale}/privacy`,
       languages: Object.fromEntries(
         locales.map((l) => [l, `${baseUrl}/${l}/privacy`])
       ),
+    },
+    openGraph: {
+      title,
+      description: dict.privacy.metaDescription,
+      url: `${baseUrl}/${locale}/privacy`,
+      type: "website" as const,
+      siteName: "DevTools Hub",
+    },
+    twitter: {
+      card: "summary" as const,
+      title,
+      description: dict.privacy.metaDescription,
     },
   };
 }
