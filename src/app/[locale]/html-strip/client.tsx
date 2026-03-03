@@ -38,9 +38,9 @@ function stripHtmlTags(html: string, options: Options): string {
     result = result.replace(/&[#\w]+;/g, (match) => {
       if (entities[match]) return entities[match];
       const numMatch = match.match(/&#(\d+);/);
-      if (numMatch) return String.fromCharCode(parseInt(numMatch[1]));
+      if (numMatch) return String.fromCodePoint(parseInt(numMatch[1]));
       const hexMatch = match.match(/&#x([0-9a-fA-F]+);/);
-      if (hexMatch) return String.fromCharCode(parseInt(hexMatch[1], 16));
+      if (hexMatch) return String.fromCodePoint(parseInt(hexMatch[1], 16));
       return match;
     });
   }

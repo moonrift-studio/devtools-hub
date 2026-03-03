@@ -546,27 +546,24 @@ const de: Dictionary = {
       ],
     },
     keywordCounter: {
-      name: "Keyword-Zaehler",
-      title: "Keyword-Zaehler & Dichte-Analysator",
-      description: "Keyword-Haeufigkeit und -Dichte zaehlen",
-      metaTitle:
-        "Keyword-Zaehler — Worthaeufigkeit & Dichte-Analyse online",
-      metaDescription:
-        "Kostenloser Online-Keyword-Zaehler und Dichte-Analysator. Worthaeufigkeit zaehlen, Keyword-Dichte analysieren und gaengige Phrasen finden. Ideal fuer SEO und Content-Erstellung.",
-      capsule:
-        "Analysieren Sie Keyword-Haeufigkeit und -Dichte in beliebigem Text. Zeigen Sie Einzelwortzaehlungen, 2-Wort-Phrasen (Bigramme) und 3-Wort-Phrasen (Trigramme) an. Unverzichtbar fuer SEO-Optimierung und Inhaltsanalyse.",
+      name: "Keyword-Z\u00E4hler",
+      title: "Keyword-Z\u00E4hler",
+      description: "Bestimmte Keyword-Vorkommen im Text z\u00E4hlen",
+      metaTitle: "Keyword-Z\u00E4hler \u2014 Keyword-Vorkommen im Text online z\u00E4hlen",
+      metaDescription: "Kostenloser Online-Keyword-Z\u00E4hler. Geben Sie Keywords ein und z\u00E4hlen Sie deren Vorkommen in beliebigem Text. Gro\u00DF-/Kleinschreibung optional. Ideal f\u00FCr SEO, Redaktion und Inhaltsanalyse.",
+      capsule: "Geben Sie Ihren Text ein und listen Sie die zu suchenden Keywords auf (eines pro Zeile), um deren Vorkommen zu z\u00E4hlen. Unterst\u00FCtzt Gro\u00DF-/Kleinschreibung-sensitive und -insensitive Suche. Funktioniert mit allen Sprachen einschlie\u00DFlich CJK.",
       faq: [
         {
-          q: "Was ist Keyword-Dichte?",
-          a: "Die Keyword-Dichte ist der Prozentsatz, wie oft ein Keyword im Verhaeltnis zur Gesamtwortzahl erscheint. Wenn beispielsweise 'JavaScript' 5 Mal in einem 200-Woerter-Artikel vorkommt, betraegt die Dichte 2,5%. SEO-Experten empfehlen generell eine Keyword-Dichte zwischen 1-3%.",
+          q: "Wie funktioniert dieser Keyword-Z\u00E4hler?",
+          a: "Geben Sie Ihren Quelltext ein oder f\u00FCgen Sie ihn ein, und listen Sie dann die zu suchenden Keywords auf (eines pro Zeile). Das Tool z\u00E4hlt, wie oft jedes Keyword im Text vorkommt, mittels Teilstring-Abgleich.",
         },
         {
-          q: "Was sind N-Gramme (Bigramme und Trigramme)?",
-          a: "N-Gramme sind Folgen aufeinanderfolgender Woerter. Bigramme sind 2-Wort-Phrasen (wie 'maschinelles Lernen'), und Trigramme sind 3-Wort-Phrasen (wie 'natuerliche Sprachverarbeitung'). Die Analyse von N-Grammen hilft, haeufig wiederholte Phrasen in Ihrem Inhalt zu identifizieren.",
+          q: "Unterst\u00FCtzt dieses Tool Japanisch und andere CJK-Sprachen?",
+          a: "Ja. Da Sie die genauen Keywords angeben, funktioniert dieses Tool mit jeder Sprache. Es verwendet Teilstring-Abgleich, der ideal f\u00FCr CJK-Texte ist, in denen W\u00F6rter nicht durch Leerzeichen getrennt sind.",
         },
         {
-          q: "Wie kann ich Keyword-Analyse fuer SEO nutzen?",
-          a: "Die Keyword-Analyse hilft sicherzustellen, dass Ihre Ziel-Keywords mit angemessener Haeufigkeit erscheinen. Stellen Sie sicher, dass Ihr primaeres Keyword eine Dichte von 1-3% hat, verwenden Sie verwandte Keywords natuerlich im Text und vermeiden Sie Keyword-Stuffing, das die Suchplatzierungen verschlechtern kann.",
+          q: "Was ist der Unterschied zwischen Gro\u00DF-/Kleinschreibung-sensitiver und -insensitiver Suche?",
+          a: "Die Gro\u00DF-/Kleinschreibung-insensitive Suche (Standard) behandelt Gro\u00DF- und Kleinbuchstaben gleich \u2014 \u201EHello\u201C und \u201Ehello\u201C werden als dasselbe Keyword gez\u00E4hlt. Die sensitive Suche z\u00E4hlt sie separat.",
         },
       ],
     },

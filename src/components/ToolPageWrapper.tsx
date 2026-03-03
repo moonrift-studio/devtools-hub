@@ -6,6 +6,7 @@ import {
   FAQSchema,
   BreadcrumbSchema,
 } from "./StructuredData";
+import { getToolWarnings } from "@/i18n/toolWarnings";
 
 type ToolKey =
   | "jsonFormatter"
@@ -83,6 +84,7 @@ export async function ToolPage({
     process.env.NEXT_PUBLIC_BASE_URL || "https://devtools-hub.vercel.app";
   const tool = dict.tools[toolKey];
   const faqs = "faq" in tool ? (tool as { faq: { q: string; a: string }[] }).faq : [];
+  const warnings = getToolWarnings(toolKey, locale);
 
   return (
     <>
@@ -109,6 +111,17 @@ export async function ToolPage({
           <p className="text-sm text-muted mb-6 leading-relaxed">
             {(tool as { capsule: string }).capsule}
           </p>
+        )}
+
+        {/* Tool-specific warnings */}
+        {warnings.length > 0 && (
+          <div className="mb-6 p-3 rounded-lg border border-amber-600/30 bg-amber-900/10 text-sm text-muted">
+            <ul className="list-disc list-inside space-y-1">
+              {warnings.map((w, i) => (
+                <li key={i}>{w}</li>
+              ))}
+            </ul>
+          </div>
         )}
 
         {children}
